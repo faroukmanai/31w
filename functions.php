@@ -7,4 +7,3 @@ function ajouter_styles() {
                 filemtime(get_template_directory() . '/style.css'));//la derniere version de la feuille de style
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
-
