@@ -1,0 +1,42 @@
+// .menu-entete-container{
+//  background-color: black;
+//     .menu{//ul
+//         display: flex;
+
+//         .menu-item{//li
+//             list-style: none;
+
+//             a{
+//                 text-decoration: none;
+//                 color:white;
+//             }
+
+//         }
+
+//     }
+
+
+// }
+
+.menu-entete-container{
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        background-color: antiquewhite;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+
+    .menu-item {
+
+        a{ 
+        text-decoration: none;
+        padding:3px 5px;
+        color: #555;
+        }
+        a:hover{
+            color:green;
+        }
+    }
+}
