@@ -389,17 +389,21 @@ p {
 /* -------------------------- COMPOSANT */
 .menu-entete-container {
   background-color: black;
+  padding: 15px;
 }
-
-.menu {
+.menu-entete-container .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: wrap;
-  list-style: none;
+  list-style-type: none;
+ 
 }
 
-.menu-item a {
+.menu-entete-container .menu .menu-item a {
+  
+  color: #ffffff;
   text-decoration: none;
-  padding: 3px 5px;
-  color: white;
+}
+.menu-entete-container .menu .menu-item a:hover {
+  text-decoration: underline;
 }

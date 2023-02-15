@@ -26,8 +26,8 @@ add_theme_support( 'custom-logo',
 /** enregistrement des menus **/
 function enregistrement_des_menus(){
     register_nav_menus( array(
-        'menu_entete' => 'menu entête',
-        'menu foter'  => 'menu pied de page',
+        'menu_entete' => 'Menu entête',
+        'menu foter'  => 'Menu pied de page',
         ) );
     }
 add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
