@@ -7,4 +7,4 @@
     - Créer une structure Sass
     - Créer un minimum de 10 commits
     - Déployer le site local vers un serveur distant
-    # Adresse sur siteground: https://aecweb15.sg-host.com/
+##### Adresse sur siteground: https://aecweb15.sg-host.com/
