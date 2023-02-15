@@ -387,18 +387,19 @@ p {
 }
 
 /* -------------------------- COMPOSANT */
-.menu-entete-container .menu {
+.menu-entete-container {
+  background-color: black;
+}
+
+.menu {
   display: flex;
   justify-content: flex-end;
-  background-color: antiquewhite;
   flex-wrap: wrap;
   list-style: none;
 }
-.menu-entete-container .menu-item a {
+
+.menu-item a {
   text-decoration: none;
   padding: 3px 5px;
-  color: #555;
-}
-.menu-entete-container .menu-item a:hover {
-  color: green;
+  color: white;
 }
