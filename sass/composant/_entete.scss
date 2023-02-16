@@ -1,5 +1,13 @@
+.site__entete{}
+.logomenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-entete-container {
-    background-color: black;
+    // background-color: black;
+    flex:1;
     padding : 15px;
 
     .menu { //ul
@@ -10,16 +18,17 @@
     
     .menu-item { // li
         a{
-           
-            color: #ffffff;
+           text-decoration: none;
+            color: #060505;
         }
         a:hover {
             text-decoration: underline;
+            color: rgb(95, 95, 244);
+        }
+    
         }
     
     }
     
-    }
     
-    
-    }
+}

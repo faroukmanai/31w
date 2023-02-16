@@ -334,6 +334,32 @@ html {
   box-sizing: border-box;
 }
 
+/* -------------------------- COMPOSANT */
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container {
+  flex: 1;
+  padding: 15px;
+}
+.menu-entete-container .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu-entete-container .menu .menu-item a {
+  text-decoration: none;
+  color: #060505;
+}
+.menu-entete-container .menu .menu-item a:hover {
+  text-decoration: underline;
+  color: rgb(95, 95, 244);
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
@@ -384,26 +410,4 @@ h6 {
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-/* -------------------------- COMPOSANT */
-.menu-entete-container {
-  background-color: black;
-  padding: 15px;
-}
-.menu-entete-container .menu {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style-type: none;
- 
-}
-
-.menu-entete-container .menu .menu-item a {
-  
-  color: #ffffff;
-  text-decoration: none;
-}
-.menu-entete-container .menu .menu-item a:hover {
-  text-decoration: underline;
 }
