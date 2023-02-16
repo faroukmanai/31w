@@ -360,6 +360,18 @@ html {
   color: rgb(95, 95, 244);
 }
 
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  border: 1px solid rgb(205, 203, 203);
+  flex: 1 0 300px;
+  margin: 10px;
+  padding: 5px;
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
