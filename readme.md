@@ -1,10 +1,11 @@
-# Exercice1
-## Installation de wordpress et création de thème
+# Exercice2
+## Améliorer la structure générale du thème
 ### Auteur: Farouk Manai
 #### Objectifs
-    - Installer WP
-    - Créer un thème simple
-    - Créer une structure Sass
+    - Formater en scss l'afichage de ichier markdown
+    - Créer des modèles pour afficher des archives d'article
+    - Améliorer le module front-page.php
+    - Création de menu
+    - Créer un site adaptatif en utilisant l'approche mobile-first
     - Créer un minimum de 10 commits
-    - Déployer le site local vers un serveur distant
 ##### Adresse sur siteground: https://aecweb15.sg-host.com/
