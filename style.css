@@ -353,11 +353,10 @@ html {
 }
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
-  color: #060505;
+  color: black;
 }
 .menu-entete-container .menu .menu-item a:hover {
   text-decoration: underline;
-  color: rgb(95, 95, 244);
 }
 
 .blocflex {
@@ -370,6 +369,9 @@ html {
   flex: 1 0 300px;
   margin: 10px;
   padding: 5px;
+}
+.blocflex article:hover {
+  box-shadow: 4px 5px 15px 5px rgba(32, 32, 32, 0.35);
 }
 
 /*   -----base */
