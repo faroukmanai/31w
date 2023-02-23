@@ -374,6 +374,12 @@ html {
   box-shadow: 4px 5px 15px 5px rgba(32, 32, 32, 0.35);
 }
 
+.recherche article {
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
