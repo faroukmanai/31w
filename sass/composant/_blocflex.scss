@@ -2,12 +2,25 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap:20px;
 
     article{
-        border : 1px solid rgb(205, 203, 203);
+        border : 1px solid rgb(208, 207, 207);
+        background-color: rgb(251, 251, 251);
+        border-radius: 10px;
         flex: 1 0 300px;
         margin : 10px;
-        padding: 5px;
+        padding: 10px;
+        text-align: center;
+
+        h3 a,h5 a{
+            text-decoration: none;
+            color:rgb(25, 106, 144);
+        }
+        h3 a:hover,h5 a:hover{
+            text-decoration: underline;
+        }
+
     }
     article:hover{
         box-shadow: 4px 5px 15px 5px rgba(32,32,32,0.35);

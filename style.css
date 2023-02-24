@@ -334,26 +334,46 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  padding: 0px 20px;
+}
+
 /* -------------------------- COMPOSANT */
+.site__entete h1 a, .site__entete h2 {
+  padding-left: 20px;
+}
+.site__entete h1 a {
+  color: #000000;
+}
+
 .logomenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #012d12;
+  box-sizing: border-box;
+  gap: 10px;
+  padding: 0px 20px;
 }
 
 .menu-entete-container {
   flex: 1;
-  padding: 15px;
 }
 .menu-entete-container .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-left: auto;
+  gap: 10px;
+}
+.menu-entete-container .menu .menu-item {
+  flex: 1 0 50px;
 }
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 254, 254);
+  font-size: 22px;
 }
 .menu-entete-container .menu .menu-item a:hover {
   text-decoration: underline;
@@ -363,19 +383,30 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .blocflex article {
-  border: 1px solid rgb(205, 203, 203);
+  border: 1px solid rgb(208, 207, 207);
+  background-color: rgb(251, 251, 251);
+  border-radius: 10px;
   flex: 1 0 300px;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.blocflex article h3 a, .blocflex article h5 a {
+  text-decoration: none;
+  color: rgb(25, 106, 144);
+}
+.blocflex article h3 a:hover, .blocflex article h5 a:hover {
+  text-decoration: underline;
 }
 .blocflex article:hover {
   box-shadow: 4px 5px 15px 5px rgba(32, 32, 32, 0.35);
 }
 
 .recherche article {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px;
 }

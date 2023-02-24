@@ -4,7 +4,7 @@
 
 <footer> 
 
-<h3>pied de page</h3>
+<!-- <h3>pied de page</h3> -->
 
 </footer>
 <?php wp_footer() ?>

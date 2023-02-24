@@ -1,26 +1,39 @@
-.site__entete{}
+.site__entete{
+    h1 a,h2{
+        padding-left: 20px;
+    }
+    h1 a{
+        color: #000000;
+    }
+}
 .logomenu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #012d12;
+    box-sizing: border-box;
+    gap:10px;
+    padding: 0px 20px;
     
 }
 
 .menu-entete-container {
     
     flex:1;
-    padding : 15px;
-
     .menu { //ul
         display : flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         flex-wrap: wrap;
         list-style-type: none;
+        margin-left: auto;
+        gap:10px;
     
     .menu-item { // li
+        flex:1 0 50px;
             a{
             text-decoration: none;
-            color: black;
+            color: rgb(255, 254, 254);
+            font-size: 22px;
             }
             a:hover {
                 text-decoration: underline;
