@@ -21,5 +21,14 @@
         <h2><?php bloginfo('description');?></h2>
        
     </header>
+    <aside class="site__aside">
+        <h3>Menu Secondaire</h3>
+        <?php 
+        // $category = get_queried_object();
+        wp_nav_menu(array(
+            "menu" => "cours",
+            "container" => "nav"
+        )); ?>
+    </aside>
 
    
