@@ -2,7 +2,7 @@
 // Modèle search.php pour afficher les resultats de recherche
  ?> 
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <code>search.php</code> 
     <section class="recherche">
 <?php 

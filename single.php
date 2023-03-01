@@ -2,7 +2,7 @@
 // Modèle index.php représente le modèle par defaut du théme
  ?> 
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <h3>index.php</h3>
 <?php 
     if (have_posts()):

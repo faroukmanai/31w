@@ -2,7 +2,7 @@
 // Modèle index.php représente le modèle par defaut du théme
  ?> 
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <code>front-page.php</code>
     <!-- <h3>index.php</h3> -->
     <section class="blocflex">
@@ -13,8 +13,8 @@
                     // the_permalink();?>
                 
                 <article>
-                    <h3><a href="<?php the_permalink();?>"><?=get_the_title();?></a></h3>
-                    <p> <?php  echo wp_trim_words(get_the_excerpt(),10);?></p>
+                    <h5><a href="<?php the_permalink();?>"><?=get_the_title();?></a></h5>
+                    <p> <?php  echo wp_trim_words(get_the_excerpt(),20);?></p>
                 </article>
             <?php endwhile;
             endif;
