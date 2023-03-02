@@ -385,7 +385,11 @@ main {
   flex-wrap: wrap;
   gap: 20px;
 }
-.blocflex article {
+.blocflex article:hover {
+  box-shadow: 4px 5px 15px 5px rgba(32, 32, 32, 0.35);
+}
+
+.blocflex__article {
   border: 1px solid rgb(208, 207, 207);
   background-color: rgb(244, 243, 236);
   border-radius: 10px;
@@ -394,16 +398,17 @@ main {
   padding: 10px;
   text-align: center;
 }
-.blocflex article h5 a {
+.blocflex__article h5 a {
   text-decoration: none;
   color: #011d2e;
   text-transform: uppercase;
 }
-.blocflex article h5 a:hover {
+.blocflex__article h5 a:hover {
   text-decoration: underline;
 }
-.blocflex article:hover {
-  box-shadow: 4px 5px 15px 5px rgba(32, 32, 32, 0.35);
+
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 .recherche article {
