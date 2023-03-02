@@ -1,4 +1,7 @@
 # TP1
+
+### Adresse sur siteground: https://aecweb15.sg-host.com/
+
 ## Auteur: Farouk Manai
 ### L'objectif du TP1 :
 - Créer une extension
@@ -19,8 +22,8 @@
 - Une mise en page entièrement adaptative
 
 ##### Au niveau du design du site inspirez-vous des sites:
-https://www.scrum.org/
-https://cfe.dev/
+- https://www.scrum.org/
+- https://cfe.dev/
 
 
 ### Déroulement du projet
@@ -41,6 +44,3 @@ La pagination globale « layout » du site et les différentes zones de la page:
 
 
 
-
-
-##### Adresse sur siteground: https://aecweb15.sg-host.com/

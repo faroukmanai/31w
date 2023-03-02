@@ -41,10 +41,10 @@ function cidweb_modifie_requete_principal( $query ) {
     if ( $query->is_home() // si page d'accueil
         && $query->is_main_query() // si requête principale
         && ! is_admin() ) {// non tableau de bord
-      $query->set( 'category_name', 'note-wp' );// filtre les articles de catégorie "note-wp"
-      $query->set( 'orderby', 'title' );// trie selon le titre
-      $query->set( 'order', 'ASC' );//en prdre ascendant
-      }
-     }
+        $query->set( 'category_name', 'note-wp' );// filtre les articles de catégorie "note-wp"
+        $query->set( 'orderby', 'title' );// trie selon le titre
+        $query->set( 'order', 'ASC' );//en prdre ascendant
+        }
+    }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
                     

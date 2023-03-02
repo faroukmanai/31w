@@ -8,14 +8,8 @@
     <section class="blocflex">
         <?php 
             if (have_posts()):
-                while(have_posts()): the_post();
-                    // the_title('<h1>','</h1>');
-                    // the_permalink();?>
-                
-                <article>
-                    <h5><a href="<?php the_permalink();?>"><?=get_the_title();?></a></h5>
-                    <p> <?php  echo wp_trim_words(get_the_excerpt(),20);?></p>
-                </article>
+                while(have_posts()): the_post();?>
+                <?php get_template_part("template-parts/categorie", "note-wp"); ?>
             <?php endwhile;
             endif;
         ?>
