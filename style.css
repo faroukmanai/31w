@@ -498,6 +498,7 @@ Mise en page avec display grid
 }
 .site__aside ul {
   padding: 10px;
+  margin-left: 10px;
 }
 .site__aside ul li a {
   font-size: 18px;
