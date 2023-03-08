@@ -8,8 +8,8 @@
 
  $titre = get_the_title();
  $sigle = substr($titre, 0, 7);
- $titre_long = substr($titre,7, -5);
- $duree = "90h";
+ $titre_long = substr($titre,7, -5);//à regler pour le tp
+ $duree = "90h";// à regler pour le tp
 ?>
 
 

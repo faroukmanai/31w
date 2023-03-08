@@ -3,7 +3,7 @@
  ?> 
 <?php get_header(); ?>
 <main class="site__main">
-    <code>front-page.php</code>
+    <!-- <code>front-page.php</code> -->
     <!-- <h3>index.php</h3> -->
     <section class="blocflex">
         <?php 

@@ -491,8 +491,18 @@ Mise en page avec display grid
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(244, 243, 243);
+}
+.site__aside h3 {
+  text-align: center;
+}
+.site__aside ul {
+  padding: 10px;
+}
+.site__aside ul li a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
 }
 
 /**
