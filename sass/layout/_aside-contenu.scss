@@ -22,7 +22,7 @@ Mise en page avec display grid
     grid-area: aside;
     background-color: rgb(244, 243, 243);
     h3{
-      text-align: center;
+      padding-left: 10px;
     }
     ul{
       padding: 10px;
@@ -56,5 +56,21 @@ Mise en page avec display grid
       "aside main"
       "footer footer";
 
+    }
+  }
+
+  .no_aside{
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    row-gap: 50px;
+
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: auto;
+      grid-template-areas:
+      "header"
+      "main"
+      "footer";
     }
   }
