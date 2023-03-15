@@ -417,6 +417,31 @@ main {
   padding: 10px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+.menu .menu-item {
+  list-style-type: none;
+}
+.menu .menu-item a .cours__sigle {
+  padding: 3px;
+}
+.menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
@@ -475,7 +500,6 @@ Mise en page avec display grid
 */
 .site__entete {
   grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(246, 245, 243);
 }
 
@@ -517,7 +541,7 @@ Mise en page avec display grid
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 30% auto;
+    grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }

@@ -4,7 +4,7 @@ Mise en page avec display grid
 */
 .site__entete {
     grid-area: header;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
+    // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(246, 245, 243);
   }
   
@@ -50,7 +50,7 @@ Mise en page avec display grid
     row-gap: 50px;
 
     @media screen and (min-width: 1000px) {
-      grid-template-columns: 30% auto;
+      grid-template-columns: 20% auto;
       grid-template-areas:
       "header header"
       "aside main"
