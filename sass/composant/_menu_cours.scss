@@ -1,6 +1,6 @@
-.menu-cours-container{//nav
+// .menu-cours-container{//nav
 
-}
+// }
 .menu {//ul
     display: flex;
     flex-direction: row;
@@ -10,14 +10,14 @@
     }
     .menu-item{//li
         list-style-type: none;
-        
-        a{// à completer
+
+        a{
             .cours__sigle{
                 padding : 3px;
             }
             .cours__titre{
                 display:none;
-                @media screen and (min-width: 500px) {
+                @media screen and (min-width: 1000px) {
                     display: block;
                 }
             }
