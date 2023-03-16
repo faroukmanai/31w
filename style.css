@@ -339,38 +339,52 @@ main {
 }
 
 /* -------------------------- COMPOSANT */
-.site__entete h1 a, .site__entete h2 {
-  padding-left: 20px;
-}
-.site__entete h1 a {
-  color: #000000;
-}
-
 .logomenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #011d2e;
-  box-sizing: border-box;
-  gap: 10px;
 }
 
 .menusearch {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: flex-end;
-  flex-direction: column-reverse;
 }
 @media screen and (min-width: 1000px) {
   .menusearch {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+#chkBurger {
+  display: none;
+}
+
+#chkBurger:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+.burger {
+  display: block;
+}
+@media screen and (min-width: 500px) {
+  .burger {
+    display: none;
   }
 }
 
 .menu-entete-container {
-  flex: 1;
+  transform: translateX(300px);
+  transition: transform 0.25s;
+}
+@media screen and (min-width: 500px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
 }
 .menu-entete-container .menu {
   display: flex;
@@ -378,21 +392,29 @@ main {
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0 20px;
+}
+@media screen and (min-width: 500px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 50px;
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  text-decoration: none;
-  color: rgb(255, 254, 254);
-  font-size: 22px;
+  padding: 3px 5px;
+  color: #555;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  text-decoration: underline;
+  color: rgb(255, 191, 0);
+}
+
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .blocflex {
@@ -433,27 +455,27 @@ main {
   padding: 10px;
 }
 
-.menu {
+.menu-cours-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
-  .menu {
+  .menu-cours-container .menu {
     flex-direction: column;
   }
 }
-.menu .menu-item {
+.menu-cours-container .menu .menu-item {
   list-style-type: none;
 }
-.menu .menu-item a .cours__sigle {
+.menu-cours-container .menu .menu-item a .cours__sigle {
   padding: 3px;
 }
-.menu .menu-item a .cours__titre {
+.menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .menu .menu-item a .cours__titre {
+  .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
   }
 }
@@ -512,11 +534,12 @@ p {
 
 /* -------------------------- layout */
 /**
-Mise en page avec display grid
+Mise en page avec display: grid
 */
 .site__entete {
   grid-area: header;
-  background-color: rgb(246, 245, 243);
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: rgb(239, 239, 239);
 }
 
 .site__main {
@@ -526,30 +549,18 @@ Mise en page avec display grid
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(246, 245, 243);
+  background-color: rgb(239, 239, 239);
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(244, 243, 243);
-}
-.site__aside h3 {
-  padding-left: 10px;
-}
-.site__aside ul {
-  padding: 10px;
-  margin-left: 10px;
-}
-.site__aside ul li a {
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
+  background-color: rgb(239, 239, 239);
 }
 
-/**
-*body ou un conteneur globale
-  */
+/* body ou un conteneur globale */
 .site {
+  width: 100vw;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
@@ -557,17 +568,17 @@ Mise en page avec display grid
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 
-.no_aside {
+.no-aside {
   grid-template-areas: "header" "main" "footer";
   row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
-  .no_aside {
+  .no-aside {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }

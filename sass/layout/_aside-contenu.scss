@@ -1,76 +1,59 @@
-
 /**
-Mise en page avec display grid
+Mise en page avec display: grid
 */
+
 .site__entete {
-    grid-area: header;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(246, 245, 243);
-  }
-  
-  .site__main {
-    grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  }
-  
-  .site__footer {
-    grid-area: footer;
-    background-color: rgb(246, 245, 243);
-  }
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: rgb(239, 239, 239);
+}
 
-  .site__aside {
-    grid-area: aside;
-    background-color: rgb(244, 243, 243);
-    h3{
-      padding-left: 10px;
-    }
-    ul{
-      padding: 10px;
-      margin-left:10px;
-    }
-    ul li a{
-      font-size: 18px;
-      color:black;
-      text-decoration: none;
-    }
-  }
-  
-  /**
-  *body ou un conteneur globale
-    */
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
 
-  .site {
-    display: grid;
+.site__footer {
+  grid-area: footer;
+  background-color: rgb(239, 239, 239);
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(239, 239, 239);
+}
+/* body ou un conteneur globale */
+.site {
+  width : 100vw;
+  overflow-x :hidden;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  row-gap: 50px;
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: 30% auto;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  row-gap: 50px;
+  @media screen and (min-width: 1000px) {
     grid-template-columns: auto;
     grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    row-gap: 50px;
-
-    @media screen and (min-width: 1000px) {
-      grid-template-columns: 20% auto;
-      grid-template-areas:
-      "header header"
-      "aside main"
-      "footer footer";
-
-    }
+    "header"
+    "main"
+    "footer";
   }
-
-  .no_aside{
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    row-gap: 50px;
-
-    @media screen and (min-width: 1000px) {
-      grid-template-columns: auto;
-      grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    }
-  }
+}
