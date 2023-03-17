@@ -1,6 +1,8 @@
-
-.site__entete {
-
+.site__entete{
+    text-align: center;
+}
+.site__entete h1 a{
+    color: black;
 }
 .logomenu{
     display:flex;
@@ -61,11 +63,14 @@
 
     a{
         white-space: nowrap;
-        padding : 3px 5px;
-        color : #555;
+        padding : 3px 10px;
+        color : black;
+        font-size: 18px;
+        text-decoration: none;
     }
     a:hover {
-        color : rgb(255, 191, 0);
+        
+        text-decoration: underline;
     }
 
 }

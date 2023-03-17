@@ -339,6 +339,14 @@ main {
 }
 
 /* -------------------------- COMPOSANT */
+.site__entete {
+  text-align: center;
+}
+
+.site__entete h1 a {
+  color: black;
+}
+
 .logomenu {
   display: flex;
   justify-content: space-between;
@@ -405,11 +413,13 @@ main {
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  padding: 3px 5px;
-  color: #555;
+  padding: 3px 10px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: rgb(255, 191, 0);
+  text-decoration: underline;
 }
 
 .recherche {
@@ -429,8 +439,6 @@ main {
 
 .blocflex__article {
   border: 1px solid rgb(208, 207, 207);
-  background-color: rgb(244, 243, 236);
-  border-radius: 10px;
   flex: 1 0 300px;
   margin: 10px;
   padding: 10px;
@@ -467,6 +475,10 @@ main {
 }
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  align-items: center;
 }
 .menu-cours-container .menu .menu-item a .cours__sigle {
   padding: 3px;
@@ -539,7 +551,7 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(233, 233, 233);
 }
 
 .site__main {
@@ -549,12 +561,20 @@ Mise en page avec display: grid
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(233, 233, 233);
+  text-align: center;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(231, 239, 255);
+}
+.site__aside h3 {
+  padding-left: 15px;
+}
+.site__aside a {
+  text-decoration: none;
+  color: black;
 }
 
 /* body ou un conteneur globale */

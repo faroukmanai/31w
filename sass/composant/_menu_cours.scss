@@ -12,6 +12,8 @@
                 list-style-type: none;
                 
             a{
+                display: flex;
+                align-items: center;
                 .cours__sigle{
                     padding : 3px;
                 }
