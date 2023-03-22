@@ -20,6 +20,7 @@ add_theme_support( 'custom-logo',
                     'height' => 150,
                     'width'  => 150,
                     ) );
+add_theme_support(  'custom-background' );                
                     
 /** enregistrement des menus **/
 function enregistrement_des_menus(){
@@ -55,15 +56,7 @@ function cidweb_modifie_requete_principal( $query ) {
 * @param $args : Objet qui représente la structure de menu
 * @param $depth : Niveau des sous menu
 */
-// function perso_menu_item_title($title, $item, $args, $depth) {
-//     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
-//     if($args->menu == 'cours') {
-//     // Modifier la longueur du titre en fonction de vos besoins
-//     $title = wp_trim_words($title, 3, ' ... ');
-//     }
-//     return $title;// À ameliorer
-//     }
-//     add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 4);
+
 
 
 function perso_menu_item_title($title, $item, $args) {
