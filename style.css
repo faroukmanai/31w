@@ -341,6 +341,7 @@ main {
 /* -------------------------- COMPOSANT */
 .site__entete {
   text-align: center;
+  background-color: rgb(230, 240, 243);
 }
 
 .site__entete h1 a {
@@ -551,7 +552,6 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
 }
 
 .site__main {
@@ -561,13 +561,16 @@ Mise en page avec display: grid
 
 .site__footer {
   grid-area: footer;
-  background-color: transparent;
+  background-color: rgb(230, 240, 243);
   text-align: center;
+}
+.site__footer a {
+  color: black;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(231, 239, 255);
+  background-color: rgb(230, 240, 243);
 }
 .site__aside h3 {
   padding-left: 15px;
