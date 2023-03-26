@@ -439,7 +439,7 @@ main {
 }
 
 .blocflex__article {
-  border: 1px solid rgb(208, 207, 207);
+  background-color: rgb(239, 246, 246);
   flex: 1 0 300px;
   margin: 10px;
   padding: 10px;
@@ -545,6 +545,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 /* -------------------------- layout */
 /**
 Mise en page avec display: grid
@@ -556,7 +560,7 @@ Mise en page avec display: grid
 
 .site__main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
 }
 
 .site__footer {
