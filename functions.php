@@ -58,7 +58,6 @@ function cidweb_modifie_requete_principal( $query ) {
 */
 
 
-
 function perso_menu_item_title($title, $item, $args) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
   
@@ -78,3 +77,45 @@ function perso_menu_item_title($title, $item, $args) {
     return  $title ;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'pied de page', '31w-themes' ),
+        'id' => 'pied-page-1',
+        'description' => __( 'Une zone widget area pour afficher des widgets dans le pied de page.', '31w-themes' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
+
+
+// function enregistrer_sidebar() {
+//     register_sidebar( array(
+//         'name' => __( 'pied de page', '31w-themes' ),
+//         'id' => 'pied-page-2',
+//         'description' => __( 'Une zone widget area pour afficher des widgets dans le pied de page.', '31w-themes' ),
+//         'before_widget' => '<div id="%1$s" class="widget %2$s">',
+//         'after_widget' => '</div>',
+//         'before_title' => '<h2 class="widget-title">',
+//         'after_title' => '</h2>',
+//     ) );
+// }
+// add_action( 'widgets_init', 'enregistrer_sidebar' );
+
+
+// function enregistrer_sidebar() {
+//     register_sidebar( array(
+//         'name' => __( 'pied de page', '31w-themes' ),
+//         'id' => 'pied-page-3',
+//         'description' => __( 'Une zone widget area pour afficher des widgets dans le pied de page.', '31w-themes' ),
+//         'before_widget' => '<div id="%1$s" class="widget %2$s">',
+//         'after_widget' => '</div>',
+//         'before_title' => '<h2 class="widget-title">',
+//         'after_title' => '</h2>',
+//     ) );
+// }
+// add_action( 'widgets_init', 'enregistrer_sidebar' );

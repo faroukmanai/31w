@@ -493,6 +493,24 @@ main {
   }
 }
 
+.site_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer_widget div {
+  flex: 1 0 33%;
+}
+
+.footer_lien {
+  display: flex;
+  flex-direction: row;
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
