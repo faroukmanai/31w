@@ -493,22 +493,27 @@ main {
   }
 }
 
-.site_footer {
+.site__footer {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
-.footer_widget {
+.footer__widget {
   display: flex;
   flex-direction: row;
 }
-.footer_widget div {
+.footer__widget div {
   flex: 1 0 33%;
+  margin-top: 30px;
 }
 
-.footer_lien {
+.footer__lien {
   display: flex;
   flex-direction: row;
+}
+.footer__lien div {
+  flex: 1 0 33%;
 }
 
 /*   -----base */
@@ -609,18 +614,16 @@ Mise en page avec display: grid
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {

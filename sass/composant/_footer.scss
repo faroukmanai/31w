@@ -1,16 +1,21 @@
-.site_footer{
+.site__footer{
     display:flex;
     flex-direction: column;
+    padding-top:30px;
 }
 
-.footer_widget{
+.footer__widget{
+    display:flex;
+    flex-direction: row;
+    div{
+        flex:1 0 33%;
+        margin-top: 30px;
+    }
+}
+.footer__lien{
     display:flex;
     flex-direction: row;
     div{
         flex:1 0 33%;
     }
-}
-.footer_lien{
-    display:flex;
-    flex-direction: row;
 }

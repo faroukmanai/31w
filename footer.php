@@ -1,25 +1,24 @@
 <?php
-// template footer 
+/**
+* Template footer.php
+*/
 ?>
-
-<footer class="site__footer"> 
-    <section class="footer_widget">
-    <div><?php dynamic_sidebar( 'pied-page-1' );?></div>
-    <div><?php dynamic_sidebar( 'pied-page-2' );?></div>
-    <div><?php dynamic_sidebar( 'pied-page-3' );?></div>
-    </section>
-    
-    <section class="footer_lien">
-        <div><?php wp_nav_menu(array('menu'=>'lien externe'))?></div>
-        <div></div>
-        <div></div>
-    </section>
-    <section></section>
-
-<h3>site en Wordpress de Farouk Manai</h3>
-<p>Mon github: <a href="https://github.com/faroukmanai">https://github.com/faroukmanai</a></p>
+<footer class="site__footer">
+<section class="footer__widget">   
+    <div><?php dynamic_sidebar( 'pied-page-1' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-2' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-3' ); ?></div>
+</section> 
+<section class="footer__lien">
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe-1',
+    'container'=>'nav',
+    'container_class'=>'footer__lien'
+    )); ?></div>
+    <div><?php ?></div>
+    <div><?php ?></div>
+</section>
 
 </footer>
-<?php wp_footer() ?>
+<?php wp_footer(); ?>
 </body>
 </html>
