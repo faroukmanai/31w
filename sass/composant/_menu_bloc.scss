@@ -5,13 +5,11 @@
         flex-wrap: wrap;
         list-style-type: none;
         .menu-item{//li
-            border:1px solid #aaaa;
+            font-size: 20px;
             flex: 1 0 33%;
-            
             .a{
-                font-size: 2rem;
                 text-decoration:none;
-                
+                color: black;   
             }
 
         }
