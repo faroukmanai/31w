@@ -511,9 +511,19 @@ main {
 .footer__lien {
   display: flex;
   flex-direction: row;
+  padding: 25px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 .footer__lien div {
   flex: 1 0 33%;
+}
+.footer__lien .menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0 auto;
+  width: max-content;
 }
 
 .menu__bloc .menu {

@@ -13,9 +13,20 @@
     }
 }
 .footer__lien{
-    display:flex;
+    display: flex;
     flex-direction: row;
+    padding: 25px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
     div{
         flex:1 0 33%;
+    }
+    .menu{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0 auto;
+        width: max-content;
     }
 }
