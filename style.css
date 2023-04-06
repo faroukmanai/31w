@@ -540,27 +540,44 @@ main {
   color: black;
 }
 
-.evenement__porte, .evenement__admission, .evenement__harcelement {
+.evenement__porte, .evenement__admission, .evenement__harcelement, .evenement__etudiants {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-image: url(https://s2.svgbox.net/weather-icons.svg?ic=time-11);
   background-repeat: no-repeat;
   background-size: 40px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 15px 15px 15px 50px;
   margin: 15px;
-  width: 100%;
 }
-.evenement__porte a, .evenement__admission a, .evenement__harcelement a {
+.evenement__porte a, .evenement__admission a, .evenement__harcelement a, .evenement__etudiants a {
   display: block;
   width: 100%;
-  height: 100%;
   text-decoration: none;
   color: black;
 }
-.evenement__porte a:hover, .evenement__admission a:hover, .evenement__harcelement a:hover {
+.evenement__porte a:hover, .evenement__admission a:hover, .evenement__harcelement a:hover, .evenement__etudiants a:hover {
   text-decoration: underline;
+}
+
+.evenement__porte {
+  background-color: rgb(206, 242, 242);
+  background-image: url(https://s2.svgbox.net/materialui.svg?ic=sensor_door);
+}
+
+.evenement__admission {
+  background-color: rgb(246, 229, 176);
+  background-image: url(https://s2.svgbox.net/weather-icons.svg?ic=time-11);
+}
+
+.evenement__harcelement {
+  background-color: rgb(208, 242, 169);
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=hand);
+}
+
+.evenement__etudiants {
+  background-color: rgb(245, 184, 201);
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
 }
 
 .viewport {
