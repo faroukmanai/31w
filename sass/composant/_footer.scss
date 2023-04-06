@@ -7,8 +7,10 @@
 .footer__widget{
     display:flex;
     flex-direction: row;
+    gap: 15px;
+    padding:0 15px;
     div{
-        flex:1 0 33%;
+        // flex:1 0 33%;
         margin-top: 30px;
     }
 }

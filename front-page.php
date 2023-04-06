@@ -5,9 +5,7 @@
 <main class="site__main">
     <!-- <code>front-page.php</code> -->
     <section class="viewport">
-        <h2>Tp2</h2>
-        <h3>Auteur: Farouk Manai</h3>
-        <h4>Cours: 31w - Introduction à un gestionnaire de contenu</h4>
+        <h2>NOS ÉVENEMENTS</h2>
         <?php wp_nav_menu(array(
             "menu"=>"evenement",
             "container"=>"nav",

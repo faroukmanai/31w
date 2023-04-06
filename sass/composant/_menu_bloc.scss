@@ -1,15 +1,17 @@
 .menu__bloc{// nav
 
     .menu{//ul
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         list-style-type: none;
         .menu-item{//li
-            font-size: 20px;
+            height: 75px;
+            font-size: 22px;
             flex: 1 0 33%;
             .a{
                 text-decoration:none;
-                color: black;   
+                color: black; 
+                
             }
 
         }
@@ -22,14 +24,16 @@
     align-items: center;
     gap: 15px;
     background-repeat: no-repeat;
-    background-size: 40px;
-    border: 1px solid black;
+    background-size: 35px;
+    background-position-y: center;
     padding:15px 15px 15px 50px;
     margin:15px;
+   
     a{
         display: block;
         width: 100%;
         text-decoration: none;
+        text-align: center;  
         color: black;
     }
     a:hover{
@@ -37,18 +41,18 @@
     }
 }
 .evenement__porte{
-    background-color: rgb(206, 242, 242);
+    background-color: rgb(220, 247, 247);
     background-image: url(https://s2.svgbox.net/materialui.svg?ic=sensor_door);
 }
 .evenement__admission{
-    background-color: rgb(246, 229, 176);
+    background-color: rgb(247, 235, 198);
     background-image: url(https://s2.svgbox.net/weather-icons.svg?ic=time-11);
 }
 .evenement__harcelement{
-    background-color: rgb(208, 242, 169);
+    background-color: rgb(240, 247, 208);
     background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=hand);
 }
 .evenement__etudiants{
-    background-color: rgb(245, 184, 201);
+    background-color: rgb(220, 215, 247);
     background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
 }
