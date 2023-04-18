@@ -3,8 +3,10 @@
  ?> 
 <?php get_header(); ?>
 <main class="site__main">
-    <code>404.php</code>
-    <h1>Erreur 400 - la page n'existe pas</h1>
+    <!-- <code>404.php</code> -->
+    <h1>Erreur 400 </h1>
+
+    <h3></h3>
 </main>
 <?php get_footer(); ?>
 
