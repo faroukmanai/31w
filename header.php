@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body class="custom-background site <?= (is_front_page() ? "no-aside" : ""); ?> <?= (is_404() ? "error-page" : ""); ?>">
+<body class="custom-background site <?= (is_front_page() || is_404() ? "no-aside" : "");  ?>">
 
     <header class="site__entete">  
         <section class="logomenu">
@@ -39,6 +39,7 @@
         get_template_part("template-parts/aside");
     }
     ?>
+    
 
   
 </body>

@@ -595,7 +595,9 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  flex-grow: 1;
   background-color: rgba(255, 255, 255, 0.6);
+  padding: 0;
 }
 .site__main h1, .site__main h3 {
   color: rgb(235, 47, 47);
@@ -611,6 +613,9 @@ main {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 .site__main ul li {
   width: max-content;
