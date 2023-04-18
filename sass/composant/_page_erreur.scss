@@ -1,0 +1,34 @@
+.site__main { 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    h1,h3{
+        color:rgb(235, 47, 47);
+        text-align: center;
+    }
+    input{
+        width:300px;
+        height:45px;
+        margin: 0 auto;
+        opacity:60%;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width:max-content;
+            padding:5px;
+        }
+    }
+
+}
+.content-wrapper {
+    display: flex;
+}
+body.no-aside .content-wrapper {
+    width: 100%; 
+}

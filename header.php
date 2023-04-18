@@ -40,7 +40,7 @@
     }
     ?>
 
-    <!-- rest of the code -->
+  
 </body>
 
     

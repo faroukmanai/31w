@@ -589,6 +589,42 @@ main {
   text-align: center;
 }
 
+.site__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.site__main h1, .site__main h3 {
+  color: rgb(235, 47, 47);
+  text-align: center;
+}
+.site__main input {
+  width: 300px;
+  height: 45px;
+  margin: 0 auto;
+  opacity: 60%;
+}
+.site__main ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.site__main ul li {
+  width: max-content;
+  padding: 5px;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+body.no-aside .content-wrapper {
+  width: 100%;
+}
+
 /*   -----base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
